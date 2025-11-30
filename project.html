@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary Meta Tags -->
+  <title>Projects - Prince Mehra | Full-Stack Developer Portfolio</title>
+  <meta name="title" content="Projects - Prince Mehra | Full-Stack Developer Portfolio">
+  <meta name="description" content="Explore my portfolio of web development, mobile apps, and creative projects. From Flutter apps to full-stack websites.">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/skills.css">
+  <link rel="stylesheet" href="./assets/css/projects.css">
+</head>
+
+<body>
+  <!-- Animated Sky Background -->
+  <div class="sky-background">
+    <div class="celestial-container">
+      <div class="sun-moon"></div>
+    </div>
+    <div class="stars-container" id="stars"></div>
+    
+    <div class="day-cloud-2"></div>
+    
+    <div class="clouds-container">
+      <div class="cloud cloud-1"></div>
+      <div class="cloud cloud-2"></div>
+      <div class="cloud cloud-3"></div>
+    </div>
+  </div>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/919024546041?text=Hi%20Prince%2C%20I%20would%20like%20to%20discuss%20a%20project%20with%20you!" 
+     class="floating-whatsapp" 
+     target="_blank"
+     rel="noopener noreferrer"
+     aria-label="Chat on WhatsApp">
+    <ion-icon name="logo-whatsapp"></ion-icon>
+    <span class="whatsapp-tooltip">Chat with me!</span>
+  </a>
+
+  <!-- #HEADER -->
+  <header class="header" data-header>
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="assets/images/logo-dark.png" width="64" height="24" alt="Prince Mehra home">
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <div class="navbar-top">
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+          <li><a href="index.html" class="navbar-link">Home</a></li>
+          <li><a href="about.html" class="navbar-link">About</a></li>
+          <li><a href="project.html" class="navbar-link active">Projects</a></li>
+          <li><a href="skills.html" class="navbar-link">Skills</a></li>
+          <li><a href="contact.html" class="navbar-link">Contact</a></li>
+        </ul>
+
+        <div class="wrapper">
+          <a href="mailto:princemehra9024@gmail.com" class="contact-link">princemehra9024@gmail.com</a>
+          <a href="tel:+919024546041" class="contact-link">+91 90245 46041</a>
+        </div>
+
+        <ul class="social-list">
+          <li>
+            <a href="https://www.linkedin.com/in/prince-mehra-562681366/" class="social-link" target="_blank" rel="noopener">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/princemehra9024" class="social-link" target="_blank" rel="noopener">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/_https.prince404?igsh=ODFtaDM1d2UzYXdt" class="social-link" target="_blank" rel="noopener">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Theme Toggle Button -->
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme" title="Toggle light & dark theme">
+        <svg class="sun-and-moon" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24">
+          ircle class="sun" cx="12" cy="12" r="5" fill="currentColor" />
+          <g class="sun-beams" stroke="currentColor" stroke-width="2">
+            <line x1="12" y1="1" x2="12" y2="3" />
+            <line x1="12" y1="21" x2="12" y2="23" />
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+            <line x1="1" y1="12" x2="3" y2="12" />
+            <line x1="21" y1="12" x2="23" y2="12" />
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+          </g>
+          <mask class="moon-mask" id="moon-mask">
+            <rect x="0" y="0" width="100%" height="100%" fill="white" />
+            ircle cx="18" cy="8" r="5" fill="black" />
+          </mask>
+        </svg>
+      </button>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+    </div>
+  </header>
+
+  <main>
+    <article>
+      
+      <!-- #PROJECTS HERO -->
+      <section class="projects-hero">
+        <div class="container">
+          <div class="hero-content" data-reveal="top">
+            <div class="code-bracket">{</div>
+            <h1 class="hero-title">
+              My <span class="gradient-text">Projects</span>
+            </h1>
+            <p class="hero-subtitle">
+              <span class="code-comment">// Building digital solutions that make a difference</span>
+            </p>
+            <p class="hero-description">
+              Explore my portfolio of web applications, mobile apps, and creative projects. Each one showcases my passion for clean code, user-centric design, and innovative problem-solving.
+            </p>
+            <div class="code-bracket">}</div>
+          </div>
+
+          <!-- Filter Tabs -->
+          <div class="project-filters" data-reveal="bottom">
+            <button class="filter-btn active" data-filter="all">
+              <span class="code-keyword">const</span> all = <span class="code-string">"*"</span>
+            </button>
+            <button class="filter-btn" data-filter="web">
+              <ion-icon name="globe-outline"></ion-icon>
+              <span>Web Apps</span>
+            </button>
+            <button class="filter-btn" data-filter="mobile">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+              <span>Mobile Apps</span>
+            </button>
+            <button class="filter-btn" data-filter="game">
+              <ion-icon name="game-controller-outline"></ion-icon>
+              <span>Games</span>
+            </button>
+            <button class="filter-btn" data-filter="design">
+              <ion-icon name="color-palette-outline"></ion-icon>
+              <span>Design</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- #PROJECTS GRID -->
+      <section class="projects-section">
+        <div class="container">
+          <div class="projects-grid">
+
+            <!-- Project 1: Aapno College Community App (MAIN PROJECT) -->
+            <article class="project-card featured" data-category="mobile" data-reveal="left">
+              <div class="project-badge featured-badge">
+                <ion-icon name="star"></ion-icon>
+                <span>Featured</span>
+              </div>
+              
+              <div class="project-image">
+                <img src="./assets/images/project-1.png" alt="Aapno College Community App">
+                <div class="project-number">01</div>
+              </div>
+              
+              <div class="project-content">
+                <div class="project-header">
+                  <h3 class="project-title">Aapno College Community App</h3>
+                  <div class="project-meta">
+                    <span class="project-type">
+                      <ion-icon name="phone-portrait-outline"></ion-icon>
+                      Mobile App
+                    </span>
+                    <span class="project-year">
+                      <ion-icon name="calendar-outline"></ion-icon>
+                      2025
+                    </span>
+                  </div>
+                </div>
+                
+                <p class="project-description">
+                  A comprehensive college community platform built with Flutter. Features include event management, student profiles, announcements, and real-time chat powered by Firebase.
+                </p>
+                
+                <div class="project-tech">
+                  <span class="tech-tag">Flutter</span>
+                  <span class="tech-tag">Dart</span>
+                  <span class="tech-tag">Firebase</span>
+                  <span class="tech-tag">Firestore</span>
+                </div>
+                
+                <div class="project-actions">
+                  <a href="https://github.com/princemehra9024" class="btn-project btn-github" target="_blank" rel="noopener">
+                    <ion-icon name="logo-github"></ion-icon>
+                    <span>View Code</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 2: PaperGen (Coming Soon) -->
+            <article class="project-card" data-category="web" data-reveal="bottom">
+              <div class="project-badge">
+                <ion-icon name="time-outline"></ion-icon>
+                <span>Coming Soon</span>
+              </div>
+              
+              <div class="project-image">
+                <img src="./assets/images/papergan.png" alt="PaperGen AI Question Paper Generator">
+                <div class="project-number">02</div>
+              </div>
+              
+              <div class="project-content">
+                <div class="project-header">
+                  <h3 class="project-title">PaperGen - AI Question Paper Generator</h3>
+                  <div class="project-meta">
+                    <span class="project-type">
+                      <ion-icon name="code-slash-outline"></ion-icon>
+                      Full-Stack
+                    </span>
+                    <span class="project-year">
+                      <ion-icon name="calendar-outline"></ion-icon>
+                      2025
+                    </span>
+                  </div>
+                </div>
+                
+                <p class="project-description">
+                  An intelligent web application that generates customized question papers using AI. Built with Python Flask backend and modern JavaScript frontend, featuring PDF generation and question bank management.
+                </p>
+                
+                <div class="project-tech">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">Flask</span>
+                  <span class="tech-tag">JavaScript</span>
+                  <span class="tech-tag">AI/ML</span>
+                  <span class="tech-tag">PDF Gen</span>
+                </div>
+                
+                <div class="project-actions">
+                  <button class="btn-project btn-disabled" disabled>
+                    <ion-icon name="time-outline"></ion-icon>
+                    <span>Coming Soon</span>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 3: Endless Runner Game (Coming Soon) -->
+            <article class="project-card" data-category="game" data-reveal="right">
+              <div class="project-badge game-badge">
+                <ion-icon name="time-outline"></ion-icon>
+                <span>Coming Soon</span>
+              </div>
+              
+              <div class="project-image">
+                <img src="./assets/images/endlass.png" alt="Endless Runner Game">
+                <div class="project-number">03</div>
+              </div>
+              
+              <div class="project-content">
+                <div class="project-header">
+                  <h3 class="project-title">Endless Runner Game</h3>
+                  <div class="project-meta">
+                    <span class="project-type">
+                      <ion-icon name="game-controller-outline"></ion-icon>
+                      Mobile Game
+                    </span>
+                    <span class="project-year">
+                      <ion-icon name="calendar-outline"></ion-icon>
+                      2024
+                    </span>
+                  </div>
+                </div>
+                
+                <p class="project-description">
+                  An addictive endless runner game developed using Flutter's Flame engine. Features smooth animations, collision detection, power-ups, and progressive difficulty levels.
+                </p>
+                
+                <div class="project-tech">
+                  <span class="tech-tag">Flutter</span>
+                  <span class="tech-tag">Flame Engine</span>
+                  <span class="tech-tag">Game Dev</span>
+                  <span class="tech-tag">Animation</span>
+                </div>
+                
+                <div class="project-actions">
+                  <button class="btn-project btn-disabled" disabled>
+                    <ion-icon name="time-outline"></ion-icon>
+                    <span>Coming Soon</span>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 4: Event Management Website -->
+            <article class="project-card" data-category="web" data-reveal="left">
+              <div class="project-badge">
+                <ion-icon name="globe"></ion-icon>
+                <span>Web</span>
+              </div>
+              
+              <div class="project-image">
+                <img src="./assets/images/project-4.jpg" alt="Event Management Website">
+                <div class="project-number">04</div>
+              </div>
+              
+              <div class="project-content">
+                <div class="project-header">
+                  <h3 class="project-title">Event Management Website</h3>
+                  <div class="project-meta">
+                    <span class="project-type">
+                      <ion-icon name="globe-outline"></ion-icon>
+                      Website
+                    </span>
+                    <span class="project-year">
+                      <ion-icon name="calendar-outline"></ion-icon>
+                      2024
+                    </span>
+                  </div>
+                </div>
+                
+                <p class="project-description">
+                  A modern, responsive event management platform with booking system, ticket generation, and admin dashboard. Built with clean HTML/CSS and vanilla JavaScript.
+                </p>
+                
+                <div class="project-tech">
+                  <span class="tech-tag">HTML5</span>
+                  <span class="tech-tag">CSS3</span>
+                  <span class="tech-tag">JavaScript</span>
+                  <span class="tech-tag">Bootstrap</span>
+                </div>
+                
+                <div class="project-actions">
+                  <a href="https://github.com/princemehra9024" class="btn-project btn-github" target="_blank" rel="noopener">
+                    <ion-icon name="logo-github"></ion-icon>
+                    <span>View Code</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 5: Isometric Farm Building Game (Coming Soon) -->
+            <article class="project-card" data-category="game" data-reveal="bottom">
+              <div class="project-badge game-badge">
+                <ion-icon name="time-outline"></ion-icon>
+                <span>Coming Soon</span>
+              </div>
+              
+              <div class="project-image">
+                <img src="./assets/images/splash_farm.jpg" alt="Farm Building Game">
+                <div class="project-number">05</div>
+              </div>
+              
+              <div class="project-content">
+                <div class="project-header">
+                  <h3 class="project-title">Isometric Farm Building Game</h3>
+                  <div class="project-meta">
+                    <span class="project-type">
+                      <ion-icon name="game-controller-outline"></ion-icon>
+                      Simulation
+                    </span>
+                    <span class="project-year">
+                      <ion-icon name="calendar-outline"></ion-icon>
+                      2024
+                    </span>
+                  </div>
+                </div>
+                
+                <p class="project-description">
+                  An engaging isometric farm simulation game with crop planting, harvesting mechanics, and resource management. Features beautiful pixel art and smooth tile-based movement.
+                </p>
+                
+                <div class="project-tech">
+                  <span class="tech-tag">Flutter</span>
+                  <span class="tech-tag">Flame Engine</span>
+                  <span class="tech-tag">Isometric</span>
+                  <span class="tech-tag">Pixel Art</span>
+                </div>
+                
+                <div class="project-actions">
+                  <button class="btn-project btn-disabled" disabled>
+                    <ion-icon name="time-outline"></ion-icon>
+                    <span>Coming Soon</span>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 6: Portfolio Website -->
+            <article class="project-card" data-category="web design" data-reveal="right">
+              <div class="project-badge design-badge">
+                <ion-icon name="color-palette"></ion-icon>
+                <span>Design</span>
+              </div>
+              
+              <div class="project-image">
+                <img src="./assets/images/port.png" alt="Personal Portfolio Website">
+                <div class="project-number">06</div>
+              </div>
+              
+              <div class="project-content">
+                <div class="project-header">
+                  <h3 class="project-title">Personal Portfolio Website</h3>
+                  <div class="project-meta">
+                    <span class="project-type">
+                      <ion-icon name="desktop-outline"></ion-icon>
+                      Portfolio
+                    </span>
+                    <span class="project-year">
+                      <ion-icon name="calendar-outline"></ion-icon>
+                      2025
+                    </span>
+                  </div>
+                </div>
+                
+                <p class="project-description">
+                  A fully responsive personal portfolio featuring smooth animations, day/night theme toggle, and modern UI design. Showcases projects, skills, and contact information elegantly.
+                </p>
+                
+                <div class="project-tech">
+                  <span class="tech-tag">HTML5</span>
+                  <span class="tech-tag">CSS3</span>
+                  <span class="tech-tag">JavaScript</span>
+                  <span class="tech-tag">Responsive</span>
+                </div>
+                
+                <div class="project-actions">
+                  <a href="https://github.com/princemehra9024" class="btn-project btn-github" target="_blank" rel="noopener">
+                    <ion-icon name="logo-github"></ion-icon>
+                    <span>View Code</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+          </div>
+
+          <!-- Load More Button -->
+          <div class="load-more-section" data-reveal="bottom">
+            <button class="btn-load-more">
+              <span class="code-keyword">function</span> loadMore() {
+              <ion-icon name="chevron-down-outline"></ion-icon>
+              }
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="cta-section">
+        <div class="container">
+          <div class="cta-card" data-reveal="bottom">
+            <div class="cta-content">
+              <h2 class="cta-title">
+                <span class="code-comment-inline">// Have a</span><br>
+                Project in Mind?
+              </h2>
+              <p class="cta-text">
+                <span class="code-keyword">if</span> (you.haveIdea) {<br>
+                &nbsp;&nbsp;<span class="code-keyword">return</span> <span class="code-string">"Let's bring it to life together!"</span>;<br>
+                }
+              </p>
+            </div>
+            <div class="cta-buttons">
+              <a href="contact.html" class="btn btn-primary">
+                <span>Start a Project</span>
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+              </a>
+              <a href="about.html" class="btn btn-secondary">
+                <span>Learn More About Me</span>
+                <ion-icon name="person-outline"></ion-icon>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+  <!-- #FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p class="copyright">© 2025 Prince Mehra. All rights reserved.</p>
+      <ul class="social-list">
+        <li>
+          <a href="https://www.linkedin.com/in/prince-mehra-562681366/" class="social-link" target="_blank" rel="noopener">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/princemehra9024" class="social-link" target="_blank" rel="noopener">
+            <ion-icon name="logo-github"></ion-icon>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/_https.prince404?igsh=ODFtaDM1d2UzYXdt" class="social-link" target="_blank" rel="noopener">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/theme-toggle.js"></script>
+  <script src="./assets/js/projects.js"></script>
+
+  <!-- Ionicons -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

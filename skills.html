@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary Meta Tags -->
+  <title>Skills & Expertise - Prince Mehra | Full-Stack Developer</title>
+  <meta name="title" content="Skills & Expertise - Prince Mehra | Full-Stack Developer">
+  <meta name="description" content="Explore my technical expertise in web development, mobile apps, UI/UX design with Figma, and modern development tools.">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/skills.css">
+</head>
+
+<body>
+  <!-- Animated Sky Background -->
+  <div class="sky-background">
+    <div class="celestial-container">
+      <div class="sun-moon"></div>
+    </div>
+    <div class="stars-container" id="stars"></div>
+    
+    <!-- Day Mode Clouds -->
+    <div class="day-cloud-2"></div>
+    
+    <div class="clouds-container">
+      <div class="cloud cloud-1"></div>
+      <div class="cloud cloud-2"></div>
+      <div class="cloud cloud-3"></div>
+    </div>
+  </div>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/919024546041?text=Hi%20Prince%2C%20I%20would%20like%20to%20discuss%20a%20project%20with%20you!" 
+     class="floating-whatsapp" 
+     target="_blank"
+     rel="noopener noreferrer"
+     aria-label="Chat on WhatsApp">
+    <ion-icon name="logo-whatsapp"></ion-icon>
+    <span class="whatsapp-tooltip">Chat with me!</span>
+  </a>
+
+  <!-- #HEADER -->
+  <header class="header" data-header>
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="assets/images/logo-dark.png" width="64" height="24" alt="Prince Mehra home">
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <div class="navbar-top">
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+          <li><a href="index.html" class="navbar-link">Home</a></li>
+          <li><a href="about.html" class="navbar-link">About</a></li>
+          <li><a href="project.html" class="navbar-link">Projects</a></li>
+          <li><a href="skills.html" class="navbar-link active">Skills</a></li>
+          <li><a href="contact.html" class="navbar-link">Contact</a></li>
+        </ul>
+
+        <div class="wrapper">
+          <a href="mailto:princemehra9024@gmail.com" class="contact-link">princemehra9024@gmail.com</a>
+          <a href="tel:+919024546041" class="contact-link">+91 90245 46041</a>
+        </div>
+
+        <ul class="social-list">
+          <li>
+            <a href="https://www.linkedin.com/in/prince-mehra-562681366/" class="social-link" target="_blank" rel="noopener">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/princemehra9024" class="social-link" target="_blank" rel="noopener">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/_https.prince404?igsh=ODFtaDM1d2UzYXdt" class="social-link" target="_blank" rel="noopener">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Theme Toggle Button -->
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme" title="Toggle light & dark theme">
+        <svg class="sun-and-moon" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24">
+          ircle class="sun" cx="12" cy="12" r="5" fill="currentColor" />
+          <g class="sun-beams" stroke="currentColor" stroke-width="2">
+            <line x1="12" y1="1" x2="12" y2="3" />
+            <line x1="12" y1="21" x2="12" y2="23" />
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+            <line x1="1" y1="12" x2="3" y2="12" />
+            <line x1="21" y1="12" x2="23" y2="12" />
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+          </g>
+          <mask class="moon-mask" id="moon-mask">
+            <rect x="0" y="0" width="100%" height="100%" fill="white" />
+            ircle cx="18" cy="8" r="5" fill="black" />
+          </mask>
+        </svg>
+      </button>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+    </div>
+  </header>
+
+  <main>
+    <article>
+      <!-- #SKILLS HERO -->
+      <section class="skills-hero">
+        <div class="container">
+          <div class="hero-content">
+            <span class="hero-subtitle" data-reveal="top">💻 Technical Arsenal</span>
+            <h1 class="hero-title" data-reveal="top" data-reveal-delay="0.15s">
+              Skills & <span class="gradient-text">Expertise</span>
+            </h1>
+            <p class="hero-description" data-reveal="top" data-reveal-delay="0.25s">
+              Crafting digital experiences with cutting-edge technologies and creative design tools
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- #SKILLS GRID -->
+      <section class="skills-section">
+        <div class="container">
+          
+          <!-- Core Technologies -->
+          <div class="skills-category" data-reveal="left">
+            <h2 class="category-title">
+              <span class="title-icon">⚡</span>
+              Core Technologies
+            </h2>
+            <div class="skills-grid">
+              
+              <!-- HTML5 -->
+              <div class="skill-box featured" data-reveal="bottom">
+                <div class="skill-badge">Expert</div>
+                <div class="skill-icon html">
+                  <ion-icon name="logo-html5"></ion-icon>
+                </div>
+                <h3 class="skill-name">HTML5</h3>
+                <p class="skill-desc">Semantic markup & accessibility</p>
+                <div class="skill-glow"></div>
+              </div>
+
+              <!-- CSS3 -->
+              <div class="skill-box featured" data-reveal="bottom" data-reveal-delay="0.1s">
+                <div class="skill-badge">Expert</div>
+                <div class="skill-icon css">
+                  <ion-icon name="logo-css3"></ion-icon>
+                </div>
+                <h3 class="skill-name">CSS3</h3>
+                <p class="skill-desc">Grid, Flexbox & animations</p>
+                <div class="skill-glow"></div>
+              </div>
+
+              <!-- JavaScript -->
+              <div class="skill-box featured" data-reveal="bottom" data-reveal-delay="0.2s">
+                <div class="skill-badge">Advanced</div>
+                <div class="skill-icon js">
+                  <ion-icon name="logo-javascript"></ion-icon>
+                </div>
+                <h3 class="skill-name">JavaScript</h3>
+                <p class="skill-desc">ES6+, async & DOM</p>
+                <div class="skill-glow"></div>
+              </div>
+
+              <!-- Python -->
+              <div class="skill-box featured" data-reveal="bottom" data-reveal-delay="0.3s">
+                <div class="skill-badge">Advanced</div>
+                <div class="skill-icon python">
+                  <ion-icon name="logo-python"></ion-icon>
+                </div>
+                <h3 class="skill-name">Python</h3>
+                <p class="skill-desc">OOP, web frameworks & AI</p>
+                <div class="skill-glow"></div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Frontend Frameworks -->
+          <div class="skills-category" data-reveal="right">
+            <h2 class="category-title">
+              <span class="title-icon">🎨</span>
+              Frontend Frameworks
+            </h2>
+            <div class="skills-grid">
+              
+              <div class="skill-box" data-reveal="bottom">
+                <div class="skill-icon react">
+                  <ion-icon name="logo-react"></ion-icon>
+                </div>
+                <h3 class="skill-name">React JS</h3>
+                <p class="skill-desc">Components & hooks</p>
+                <div class="skill-glow"></div>
+              </div>
+
+              <div class="skill-box" data-reveal="bottom" data-reveal-delay="0.1s">
+                <div class="skill-icon bootstrap">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M5.062 12h3.475c1.804 0 2.888-.908 2.888-2.396 0-1.102-.761-1.916-1.904-2.034v-.1c.832-.14 1.482-.93 1.482-1.816 0-1.3-.955-2.11-2.542-2.11H5.062V12zm1.313-4.875V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23H6.375zm0 3.762V8.162h1.822c1.236 0 1.887.463 1.887 1.348 0 .896-.627 1.377-1.811 1.377H6.375z"/>
+                  </svg>
+                </div>
+                <h3 class="skill-name">Bootstrap</h3>
+                <p class="skill-desc">Responsive layouts</p>
+                <div class="skill-glow"></div>
+              </div>
+
+              <div class="skill-box" data-reveal="bottom" data-reveal-delay="0.2s">
+                <div class="skill-icon wordpress">
+                  <ion-icon name="logo-wordpress"></ion-icon>
+                </div>
+                <h3 class="skill-name">WordPress</h3>
+                <p class="skill-desc">Theme customization</p>
+                <div class="skill-glow"></div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Mobile Development -->
+          <div class="skills-category" data-reveal="left">
+            <h2 class="category-title">
+              <span class="title-icon">📱</span>
+              Mobile Development
+            </h2>
+            <div class="skills-grid">
+              
+              <!-- Flutter -->
+              <div class="skill-box featured" data-reveal="bottom">
+                <div class="skill-badge">Advanced</div>
+                <div class="skill-icon flutter">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 512 512">
+                    <path d="M255.5 0L0 255.5l127.5 127.5L383 127.5 255.5 0zm0 255.5L127.5 383l127.5 127.5L383 383l127.5-127.5L255.5 255.5z"/>
+                  </svg>
+                </div>
+                <h3 class="skill-name">Flutter</h3>
+                <p class="skill-desc">Cross-platform apps</p>
+                <div class="skill-glow"></div>
+              </div>
+
+              <div class="skill-box" data-reveal="bottom" data-reveal-delay="0.1s">
+                <div class="skill-icon dart">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 32 32">
+                    <path d="M7 6l11-4 8 8-4 11-11-11L7 6z"/>
+                  </svg>
+                </div>
+                <h3 class="skill-name">Dart</h3>
+                <p class="skill-desc">Flutter language</p>
+                <div class="skill-glow"></div>
+              </div>
+
+              <div class="skill-box" data-reveal="bottom" data-reveal-delay="0.2s">
+                <div class="skill-icon android">
+                  <ion-icon name="logo-android"></ion-icon>
+                </div>
+                <h3 class="skill-name">Android</h3>
+                <p class="skill-desc">Native development</p>
+                <div class="skill-glow"></div>
+              </div>
+
+              <div class="skill-box" data-reveal="bottom" data-reveal-delay="0.3s">
+                <div class="skill-icon flame">
+                  <ion-icon name="flame"></ion-icon>
+                </div>
+                <h3 class="skill-name">Flame Engine</h3>
+                <p class="skill-desc">2D game development</p>
+                <div class="skill-glow"></div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Backend & Database -->
+          <div class="skills-category" data-reveal="right">
+            <h2 class="category-title">
+              <span class="title-icon">🔧</span>
+              Backend & Database
+            </h2>
+            <div class="skills-grid">
+              
+              <div class="skill-box" data-reveal="bottom">
+                <div class="skill-icon firebase">
+                  <ion-icon name="flame-outline"></ion-icon>
+                </div>
+                <h3 class="skill-name">Firebase</h3>
+                <p class="skill-desc">Auth, Firestore, Cloud</p>
+                <div class="skill-glow"></div>
+              </div>
+
+              <div class="skill-box" data-reveal="bottom" data-reveal-delay="0.1s">
+                <div class="skill-icon sql">
+                  <ion-icon name="server-outline"></ion-icon>
+                </div>
+                <h3 class="skill-name">SQL</h3>
+                <p class="skill-desc">Database queries</p>
+                <div class="skill-glow"></div>
+              </div>
+
+              <div class="skill-box" data-reveal="bottom" data-reveal-delay="0.2s">
+                <div class="skill-icon php">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 32 32">
+                    <path d="M16 2C8.268 2 2 8.268 2 16s6.268 14 14 14 14-6.268 14-14S23.732 2 16 2zm-4 20h-2v-8h2c1.657 0 3 1.343 3 3s-1.343 3-3 3zm10 0h-2v-8h2c1.657 0 3 1.343 3 3s-1.343 3-3 3z"/>
+                  </svg>
+                </div>
+                <h3 class="skill-name">PHP</h3>
+                <p class="skill-desc">Server-side scripting</p>
+                <div class="skill-glow"></div>
+              </div>
+
+              <div class="skill-box" data-reveal="bottom" data-reveal-delay="0.3s">
+                <div class="skill-icon flask">
+                  <ion-icon name="flask-outline"></ion-icon>
+                </div>
+                <h3 class="skill-name">Flask</h3>
+                <p class="skill-desc">Python web framework</p>
+                <div class="skill-glow"></div>
+              </div>
+
+              <div class="skill-box" data-reveal="bottom" data-reveal-delay="0.4s">
+                <div class="skill-icon c">
+                  <ion-icon name="code-slash-outline"></ion-icon>
+                </div>
+                <h3 class="skill-name">C Language</h3>
+                <p class="skill-desc">Core programming</p>
+                <div class="skill-glow"></div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Design & UI/UX -->
+          <div class="skills-category" data-reveal="left">
+            <h2 class="category-title">
+              <span class="title-icon">✨</span>
+              Design & Creative Tools
+            </h2>
+            <div class="skills-grid">
+              
+              <!-- Figma - Premium -->
+              <div class="skill-box featured premium" data-reveal="bottom">
+                <div class="skill-badge premium-badge">Top Skill</div>
+                <div class="skill-icon figma">
+                  <ion-icon name="color-filter-outline"></ion-icon>
+                </div>
+                <h3 class="skill-name">Figma</h3>
+                <p class="skill-desc">UI design & prototyping</p>
+                <div class="skill-stars">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-half"></ion-icon>
+                </div>
+                <div class="skill-glow premium-glow"></div>
+              </div>
+
+              <div class="skill-box" data-reveal="bottom" data-reveal-delay="0.1s">
+                <div class="skill-icon adobe">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 32 32">
+                    <path d="M10 2L2 10v12l8 8h12l8-8V10l-8-8H10zm6 26c-5.523 0-10-4.477-10-10S10.477 8 16 8s10 4.477 10 10-4.477 10-10 10z"/>
+                  </svg>
+                </div>
+                <h3 class="skill-name">Adobe XD</h3>
+                <p class="skill-desc">Design & wireframing</p>
+                <div class="skill-glow"></div>
+              </div>
+
+              <div class="skill-box" data-reveal="bottom" data-reveal-delay="0.2s">
+                <div class="skill-icon canva">
+                  <ion-icon name="images-outline"></ion-icon>
+                </div>
+                <h3 class="skill-name">Canva</h3>
+                <p class="skill-desc">Graphic design</p>
+                <div class="skill-glow"></div>
+              </div>
+
+              <div class="skill-box" data-reveal="bottom" data-reveal-delay="0.3s">
+                <div class="skill-icon uiux">
+                  <ion-icon name="brush-outline"></ion-icon>
+                </div>
+                <h3 class="skill-name">UI/UX Design</h3>
+                <p class="skill-desc">User experience</p>
+                <div class="skill-glow"></div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Development Tools -->
+          <div class="skills-category" data-reveal="right">
+            <h2 class="category-title">
+              <span class="title-icon">🛠️</span>
+              Development Tools
+            </h2>
+            <div class="skills-grid">
+              
+              <!-- VS Code -->
+              <div class="skill-box featured" data-reveal="bottom">
+                <div class="skill-badge">Expert</div>
+                <div class="skill-icon vscode">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 32 32">
+                    <path d="M29.01 5.03L23.244 2.254a1.742 1.742 0 0 0-1.989.338L2.38 19.8a1.166 1.166 0 0 0-.08 1.647l2.387 2.386a1.251 1.251 0 0 0 1.727.029l18.09-15.743a.914.914 0 0 1 1.218.002l1.72 1.497a1.086 1.086 0 0 1 .062 1.603L12.582 25.993l-4.583-3.992 6.254-7.662z"/>
+                  </svg>
+                </div>
+                <h3 class="skill-name">VS Code</h3>
+                <p class="skill-desc">Primary code editor</p>
+                <div class="skill-glow"></div>
+              </div>
+
+              <!-- Git -->
+              <div class="skill-box featured" data-reveal="bottom" data-reveal-delay="0.1s">
+                <div class="skill-badge">Advanced</div>
+                <div class="skill-icon git">
+                  <ion-icon name="git-branch-outline"></ion-icon>
+                </div>
+                <h3 class="skill-name">Git</h3>
+                <p class="skill-desc">Version control</p>
+                <div class="skill-glow"></div>
+              </div>
+
+              <div class="skill-box" data-reveal="bottom" data-reveal-delay="0.2s">
+                <div class="skill-icon github">
+                  <ion-icon name="logo-github"></ion-icon>
+                </div>
+                <h3 class="skill-name">GitHub</h3>
+                <p class="skill-desc">Code collaboration</p>
+                <div class="skill-glow"></div>
+              </div>
+
+              <div class="skill-box" data-reveal="bottom" data-reveal-delay="0.3s">
+                <div class="skill-icon androidstudio">
+                  <ion-icon name="phone-portrait-outline"></ion-icon>
+                </div>
+                <h3 class="skill-name">Android Studio</h3>
+                <p class="skill-desc">Mobile IDE</p>
+                <div class="skill-glow"></div>
+              </div>
+
+              <div class="skill-box" data-reveal="bottom" data-reveal-delay="0.4s">
+                <div class="skill-icon devtools">
+                  <ion-icon name="bug-outline"></ion-icon>
+                </div>
+                <h3 class="skill-name">DevTools</h3>
+                <p class="skill-desc">Debugging & testing</p>
+                <div class="skill-glow"></div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- AI & Automation -->
+          <div class="skills-category" data-reveal="left">
+            <h2 class="category-title">
+              <span class="title-icon">🤖</span>
+              AI & Automation
+            </h2>
+            <div class="skills-grid">
+              
+              <div class="skill-box featured" data-reveal="bottom">
+                <div class="skill-badge">Learning</div>
+                <div class="skill-icon copilot">
+                  <ion-icon name="sparkles-outline"></ion-icon>
+                </div>
+                <h3 class="skill-name">GitHub Copilot</h3>
+                <p class="skill-desc">AI pair programming</p>
+                <div class="skill-glow"></div>
+              </div>
+
+              <div class="skill-box" data-reveal="bottom" data-reveal-delay="0.1s">
+                <div class="skill-icon ai">
+                  <ion-icon name="flash-outline"></ion-icon>
+                </div>
+                <h3 class="skill-name">Prompt Engineering</h3>
+                <p class="skill-desc">AI optimization</p>
+                <div class="skill-glow"></div>
+              </div>
+
+              <div class="skill-box" data-reveal="bottom" data-reveal-delay="0.2s">
+                <div class="skill-icon aitools">
+                  <ion-icon name="bulb-outline"></ion-icon>
+                </div>
+                <h3 class="skill-name">AI Integration</h3>
+                <p class="skill-desc">Llava/Ollama API</p>
+                <div class="skill-glow"></div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Currently Learning -->
+          <div class="learning-banner" data-reveal="bottom">
+            <div class="learning-content">
+              <div class="learning-icon">
+                <ion-icon name="rocket-outline"></ion-icon>
+              </div>
+              <div class="learning-text">
+                <h3>Currently Expanding Skills</h3>
+                <p>Advanced Flutter • Node.js • Cybersecurity • Cloud Computing</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="cta-section">
+        <div class="container">
+          <div class="cta-card" data-reveal="bottom">
+            <div class="cta-content">
+              <h2 class="cta-title">Let's Build Something Amazing</h2>
+              <p class="cta-text">Ready to bring your ideas to life? Let's collaborate and create exceptional digital experiences together.</p>
+            </div>
+            <div class="cta-buttons">
+              <a href="contact.html" class="btn btn-primary">
+                <span>Get In Touch</span>
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+              </a>
+              <a href="project.html" class="btn btn-secondary">
+                <span>View Projects</span>
+                <ion-icon name="briefcase-outline"></ion-icon>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+  <!-- #FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p class="copyright">© 2025 Prince Mehra. All rights reserved.</p>
+      <ul class="social-list">
+        <li>
+          <a href="https://www.linkedin.com/in/prince-mehra-562681366/" class="social-link" target="_blank" rel="noopener">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/princemehra9024" class="social-link" target="_blank" rel="noopener">
+            <ion-icon name="logo-github"></ion-icon>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/_https.prince404?igsh=ODFtaDM1d2UzYXdt" class="social-link" target="_blank" rel="noopener">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/theme-toggle.js"></script>
+
+  <!-- Ionicons -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

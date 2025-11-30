@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary Meta Tags -->
+  <title>Prince Mehra - Full-Stack Developer | Web & Mobile App Development Portfolio</title>
+  <meta name="title" content="Prince Mehra - Full-Stack Developer | Web & Mobile App Development Portfolio">
+  <meta name="description" content="Prince Mehra - BCA student and aspiring full-stack developer. Specializing in Flutter, Python, HTML, CSS, JavaScript. View my projects and get in touch!">
+  <meta name="keywords" content="Prince Mehra, Full-Stack Developer, Web Development, Mobile Apps, Flutter, Python, HTML, CSS, JavaScript, Portfolio">
+  <meta name="author" content="Prince Mehra">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- Preload Images -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.jpg">
+</head>
+
+<body>
+  <!-- Animated Sky Background -->
+  <div class="sky-background">
+    <div class="celestial-container">
+      <div class="sun-moon"></div>
+    </div>
+    <div class="stars-container" id="stars"></div>
+    
+    <!-- Day Mode Clouds -->
+    <div class="day-cloud-2"></div>
+    
+    <div class="clouds-container">
+      <div class="cloud cloud-1"></div>
+      <div class="cloud cloud-2"></div>
+      <div class="cloud cloud-3"></div>
+    </div>
+  </div>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/919024546041?text=Hi%20Prince%2C%20I%20would%20like%20to%20discuss%20a%20project%20with%20you!" 
+     class="floating-whatsapp" 
+     target="_blank"
+     rel="noopener noreferrer"
+     aria-label="Chat on WhatsApp">
+    <ion-icon name="logo-whatsapp"></ion-icon>
+    <span class="whatsapp-tooltip">Chat with me!</span>
+  </a>
+
+  <!-- #HEADER -->
+  <header class="header" data-header>
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="assets/images/logo-dark.png" width="64" height="24" alt="Prince Mehra home">
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <div class="navbar-top">
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+          <li><a href="index.html" class="navbar-link active">Home</a></li>
+          <li><a href="about.html" class="navbar-link">About</a></li>
+          <li><a href="project.html" class="navbar-link">Projects</a></li>
+          <li><a href="skills.html" class="navbar-link">Skills</a></li>
+          <li><a href="contact.html" class="navbar-link">Contact</a></li>
+        </ul>
+
+        <div class="wrapper">
+          <a href="mailto:princemehra9024@gmail.com" class="contact-link">princemehra9024@gmail.com</a>
+          <a href="tel:+919024546041" class="contact-link">+91 90245 46041</a>
+        </div>
+
+        <ul class="social-list">
+          <li>
+            <a href="https://www.linkedin.com/in/prince-mehra-562681366/" class="social-link" target="_blank" rel="noopener">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/princemehra9024" class="social-link" target="_blank" rel="noopener">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/_https.prince404?igsh=ODFtaDM1d2UzYXdt" class="social-link" target="_blank" rel="noopener">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- ✅ ENHANCED Theme Toggle Button -->
+      <button 
+        class="theme-toggle" 
+        id="theme-toggle" 
+        aria-pressed="false"
+        aria-label="Toggle dark mode" 
+        title="Toggle theme (Press T)">
+        <svg class="sun-and-moon" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24">
+          ircle class="sun" cx="12" cy="12" r="5" fill="currentColor" />
+          <g class="sun-beams" stroke="currentColor" stroke-width="2">
+            <line x1="12" y1="1" x2="12" y2="3" />
+            <line x1="12" y1="21" x2="12" y2="23" />
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+            <line x1="1" y1="12" x2="3" y2="12" />
+            <line x1="21" y1="12" x2="23" y2="12" />
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+          </g>
+          <mask class="moon-mask" id="moon-mask">
+            <rect x="0" y="0" width="100%" height="100%" fill="white" />
+            ircle cx="18" cy="8" r="5" fill="black" />
+          </mask>
+        </svg>
+      </button>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+    </div>
+  </header>
+
+  <main>
+    <article>
+      
+      <!-- #PROFESSIONAL HERO WITH IMAGE & ANIMATIONS -->
+      <section class="section hero professional-hero" aria-label="home" id="home">
+        <div class="container">
+          <div class="hero-wrapper">
+            
+            <!-- Left Side - Content -->
+            <div class="hero-content-left" data-reveal="left">
+              
+              <!-- Animated Badge -->
+              <div class="hero-badge fade-in">
+                <span class="badge-dot"></span>
+                <span class="badge-text">Available for opportunities</span>
+              </div>
+
+              <!-- Main Title -->
+              <h1 class="hero-title-main fade-in-up">
+                Hi, I'm <span class="gradient-text">Prince Mehra</span>
+              </h1>
+
+              <!-- Animated Typing Text -->
+              <div class="typing-wrapper fade-in-up delay-1">
+                <span class="typing-prefix">I'm a</span>
+                <span class="typing-text" id="typingText"></span>
+                <span class="typing-cursor">|</span>
+              </div>
+
+              <!-- Description -->
+              <p class="hero-description-main fade-in-up delay-2">
+                IMCA student and aspiring full-stack developer passionate about creating innovative web and mobile solutions. Building the future with Python, Flutter, and modern web technologies.
+              </p>
+
+              <!-- ✅ ENHANCED CTA Buttons with Ripple Effect -->
+              <div class="hero-buttons fade-in-up delay-3">
+                <a href="project.html" class="hero-btn primary btn-ripple">
+                  <span>View My Work</span>
+                  <ion-icon name="briefcase-outline"></ion-icon>
+                </a>
+                <a href="contact.html" class="hero-btn secondary btn-ripple">
+                  <span>Get In Touch</span>
+                  <ion-icon name="arrow-forward-outline"></ion-icon>
+                </a>
+              </div>
+
+              <!-- Social Links -->
+              <div class="hero-social fade-in-up delay-4">
+                <a href="https://github.com/princemehra9024" class="social-icon" target="_blank" rel="noopener">
+                  <ion-icon name="logo-github"></ion-icon>
+                </a>
+                <a href="https://www.linkedin.com/in/prince-mehra-562681366/" class="social-icon" target="_blank" rel="noopener">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+                <a href="https://www.instagram.com/_https.prince404?igsh=ODFtaDM1d2UzYXdt" class="social-icon" target="_blank" rel="noopener">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+                <a href="#" class="social-icon" target="_blank" rel="noopener">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </div>
+
+            </div>
+
+            <!-- Right Side - Image -->
+            <div class="hero-content-right" data-reveal="right">
+              <div class="hero-image-wrapper">
+                <!-- Animated Border -->
+                <div class="image-border-animation"></div>
+                
+                <!-- Your Image -->
+                <div class="hero-image">
+                  <img src="./assets/images/princesoomd.jpeg" alt="Prince Mehra" class="profile-img">
+                </div>
+
+                <!-- Floating Elements -->
+                <div class="floating-element elem-1">
+                  <ion-icon name="code-slash-outline"></ion-icon>
+                </div>
+                <div class="floating-element elem-2">
+                  <ion-icon name="color-palette-outline"></ion-icon>
+                </div>
+                <div class="floating-element elem-3">
+                  <ion-icon name="phone-portrait-outline"></ion-icon>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Scroll Indicator -->
+          <div class="scroll-indicator" data-reveal="bottom">
+            <div class="scroll-mouse">
+              <div class="scroll-wheel"></div>
+            </div>
+            <span class="scroll-text">Scroll Down</span>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- #ABOUT -->
+      <section class="section about" aria-label="about" id="about">
+        <div class="container">
+          <div class="wrapper">
+            <div data-reveal="left">
+              <h2 class="h2 section-title">What I Do?</h2>
+              <p class="section-text">
+                I'm a student developer focused on creating web and mobile applications. From building college community platforms like 'Aapno College' to designing portfolio websites and event management systems, I love bringing ideas to life through code.
+              </p>
+            </div>
+
+            <ul class="progress-list" data-reveal="right">
+              <li class="progress-item">
+                <div class="label-wrapper">
+                  <p>Web Development</p>
+                  <span class="span">92%</span>
+                </div>
+                <div class="progress">
+                  <div class="progress-fill" style="width: 92%; background-color: #c7b1dd"></div>
+                </div>
+              </li>
+              <li class="progress-item">
+                <div class="label-wrapper">
+                  <p>Mobile Development (Flutter)</p>
+                  <span class="span">80%</span>
+                </div>
+                <div class="progress">
+                  <div class="progress-fill" style="width: 80%; background-color: #8caeec"></div>
+                </div>
+              </li>
+              <li class="progress-item">
+                <div class="label-wrapper">
+                  <p>Python Programming</p>
+                  <span class="span">85%</span>
+                </div>
+                <div class="progress">
+                  <div class="progress-fill" style="width: 85%; background-color: #b0d4c1"></div>
+                </div>
+              </li>
+              <li class="progress-item">
+                <div class="label-wrapper">
+                  <p>UI/UX Design</p>
+                  <span class="span">72%</span>
+                </div>
+                <div class="progress">
+                  <div class="progress-fill" style="width: 72%; background-color: #e3a6b6"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <ul class="grid-list">
+            <li data-reveal="bottom">
+              <div class="about-card">
+                <div class="card-icon">
+                  <ion-icon name="desktop-outline"></ion-icon>
+                </div>
+                <h3 class="h4 card-title">Web Development</h3>
+                <p class="card-text">
+                  Building responsive and attractive websites using HTML, CSS, and JavaScript. Focused on creating user-friendly interfaces with modern design principles.
+                </p>
+              </div>
+            </li>
+            <li data-reveal="bottom" data-reveal-delay="0.25s">
+              <div class="about-card">
+                <div class="card-icon">
+                  <ion-icon name="phone-portrait-outline"></ion-icon>
+                </div>
+                <h3 class="h4 card-title">Mobile App Development</h3>
+                <p class="card-text">
+                  Developing cross-platform mobile applications using Flutter and Dart. Creating community-focused apps with Firebase integration.
+                </p>
+              </div>
+            </li>
+            <li data-reveal="bottom" data-reveal-delay="0.5s">
+              <div class="about-card">
+                <div class="card-icon">
+                  <ion-icon name="code-slash-outline"></ion-icon>
+                </div>
+                <h3 class="h4 card-title">Programming & Problem Solving</h3>
+                <p class="card-text">
+                  Learning fundamental programming concepts in C and Python. Building problem-solving skills through hands-on coding projects.
+                </p>
+              </div>
+            </li>
+            <li data-reveal="bottom" data-reveal-delay="0.75s">
+              <div class="about-card">
+                <div class="card-icon">
+                  <ion-icon name="search-outline"></ion-icon>
+                </div>
+                <h3 class="h4 card-title">Portfolio & Event Management</h3>
+                <p class="card-text">
+                  Creating attractive portfolio websites and event management systems for weddings, corporate events, and college functions.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- #PROJECT -->
+      <section class="section project" aria-labelledby="project-label" id="projects">
+        <div class="container">
+          <div class="title-wrapper" data-reveal="top">
+            <div>
+              <h2 class="h2 section-title" id="project-label">Latest Projects</h2>
+              <p class="section-text">Check out some of my latest projects with creative ideas.</p>
+            </div>
+            <a href="project.html" class="btn btn-secondary btn-ripple">See All Projects</a>
+          </div>
+
+          <ul class="grid-list">
+            <li>
+              <div class="project-card project-card-1" style="background-color: #f8f5fb">
+                <div class="card-content" data-reveal="left">
+                  <p class="card-tag" style="color: #667eea">Mobile App</p>
+                  <h3 class="h3 card-title">Aapno College Community App</h3>
+                  <p class="card-text">
+                    A Flutter-based college community application with Firebase authentication, user registration, post creation, and profile management.
+                  </p>
+                  <a href="project.html" class="btn-text" style="color: #667eea">
+                    <span class="span">See Project</span>
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+                </div>
+                <figure class="card-banner" data-reveal="right">
+                  <img src="./assets/images/project-1.png" width="650" height="370" loading="lazy" alt="Mobile App" class="w-100">
+                </figure>
+              </div>
+            </li>
+
+            <li>
+              <div class="project-card project-card-2" style="background-color: #f1f5fd">
+                <div class="card-content" data-reveal="right">
+                  <p class="card-tag" style="color: #3d5afe">Web Development</p>
+                  <h3 class="h3 card-title">Shree Shyam Safa House</h3>
+                  <p class="card-text">
+                    Modern website for a traditional Safa & Turban shop, showcasing high-quality designs for weddings and cultural functions.
+                  </p>
+                  <a href="project.html" class="btn-text" style="color: #3d5afe">
+                    <span class="span">See Project</span>
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+                </div>
+                <figure class="card-banner" data-reveal="left">
+                  <img src="./assets/images/project-2.png" width="600" height="367" loading="lazy" alt="Web Development" class="w-100">
+                </figure>
+              </div>
+            </li>
+
+            <li>
+              <div class="project-card project-card-3" style="background-color: #f5faf7">
+                <div class="card-content" data-reveal="left">
+                  <p class="card-tag" style="color: #00bfa5">Web Design</p>
+                  <h3 class="h3 card-title">Event Management Website</h3>
+                  <p class="card-text">
+                    Elegant event management platform for weddings, corporate events, concerts, and social gatherings with navy blue theme.
+                  </p>
+                  <a href="project.html" class="btn-text" style="color: #00bfa5">
+                    <span class="span">See Project</span>
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+                </div>
+                <figure class="card-banner" data-reveal="right">
+                  <img src="./assets/images/project-3.jpg" width="600" height="367" loading="lazy" alt="Web Design" class="w-100">
+                </figure>
+              </div>
+            </li>
+
+            <li>
+              <div class="project-card project-card-4" style="background-color: #fcf4f6">
+                <div class="card-content" data-reveal="left">
+                  <p class="card-tag" style="color: #d81b60">Website Development</p>
+                  <h3 class="h3 card-title">StyleHub Hair Salon</h3>
+                  <p class="card-text">
+                    User-friendly salon website with service galleries, barber details, and online appointment booking. Fully responsive design.
+                  </p>
+                  <a href="project.html" class="btn-text" style="color: #d81b60">
+                    <span class="span">See Project</span>
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+                </div>
+                <figure class="card-banner" data-reveal="right">
+                  <img src="./assets/images/project-4.jpg" width="620" height="370" loading="lazy" alt="Website Development" class="w-100">
+                </figure>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- #CONTACT -->
+      <section class="section contact" aria-label="contact" id="contact">
+        <div class="container">
+          <div class="contact-card">
+            <div class="contact-content" data-reveal="left">
+              <div class="card-icon">
+                <img src="./assets/images/massge_logo.png" width="44" height="44" loading="lazy" alt="envelop icon">
+              </div>
+              <h2 class="h2 section-title">Let's work together on something great.</h2>
+              <p class="section-text">
+                I'm always interested in new projects and learning opportunities. Whether you have a question, a project idea, or just want to connect, feel free to reach out!
+              </p>
+
+              <!-- Contact Buttons -->
+              <div class="contact-methods">
+                <a href="https://wa.me/919024546041?text=Hi%20Prince%2C%20I%20would%20like%20to%20discuss%20a%20project%20with%20you!" 
+                   target="_blank"
+                   rel="noopener"
+                   class="whatsapp-btn btn-ripple">
+                  <div class="btn-icon-wrapper">
+                    <ion-icon name="logo-whatsapp"></ion-icon>
+                  </div>
+                  <div class="btn-text-wrapper">
+                    <span class="btn-title">Chat on WhatsApp</span>
+                    <span class="btn-subtitle">Instant Response</span>
+                  </div>
+                </a>
+                
+                <a href="mailto:princemehra9024@gmail.com" class="email-btn btn-ripple">
+                  <div class="btn-icon-wrapper">
+                    <ion-icon name="mail-outline"></ion-icon>
+                  </div>
+                  <div class="btn-text-wrapper">
+                    <span class="btn-title">Send Email</span>
+                    <span class="btn-subtitle">Professional Inquiries</span>
+                  </div>
+                </a>
+              </div>
+
+              <!-- Quick Connect -->
+              <div class="quick-connect">
+                <p class="quick-connect-text">Or find me on:</p>
+                <div class="social-links-inline">
+                  <a href="https://www.linkedin.com/in/prince-mehra-562681366/" target="_blank" rel="noopener" class="social-icon-link linkedin">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                  </a>
+                  <a href="https://github.com/princemehra9024" target="_blank" rel="noopener" class="social-icon-link github">
+                    <ion-icon name="logo-github"></ion-icon>
+                  </a>
+                  <a href="#" class="social-icon-link twitter">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                  </a>
+                  <a href="https://www.instagram.com/_https.prince404?igsh=ODFtaDM1d2UzYXdt" target="_blank" rel="noopener" class="social-icon-link instagram">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-form-wrapper" data-reveal="right">
+              <p class="form-note-top">
+                <ion-icon name="flash-outline"></ion-icon>
+                Need a quick response? Use WhatsApp for instant connection!
+              </p>
+              <a href="contact.html" class="btn btn-primary btn-block btn-ripple">
+                <span>Go to Contact Page</span>
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <!-- #FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p class="copyright">© 2025 Prince Mehra. All rights reserved.</p>
+      <ul class="social-list">
+        <li>
+          <a href="https://www.linkedin.com/in/prince-mehra-562681366/" class="social-link" target="_blank" rel="noopener">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/princemehra9024" class="social-link" target="_blank" rel="noopener">
+            <ion-icon name="logo-github"></ion-icon>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/_https.prince404?igsh=ODFtaDM1d2UzYXdt" class="social-link" target="_blank" rel="noopener">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/theme-toggle.js"></script>
+
+  <!-- Ionicons -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
